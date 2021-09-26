@@ -1,0 +1,21 @@
+/*Combinator*/
+
+/*Desendent selector*/
+.div1 i , .div1 b{
+	color: red;
+}
+
+/*Child selector*/
+.div3 > p{
+	color: blue;
+}
+
+/*Adjecent Sibling Selector*/
+.div5 + i{
+	color: red;
+}
+
+/*General Sibling selector*/
+.div7 ~ p{
+	color: green;
+}

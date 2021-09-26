@@ -1,0 +1,63 @@
+body{
+	background-image: url(../img/background.jpg);
+	background-repeat: no-repeat;
+}
+.div1{
+	color: #4A4D4E;
+	width: 320px;
+	height: 500px;
+	background-color: white;
+	margin: 220px 51%;
+	border: 1px;
+	border-style: solid;
+	border-color: white;
+	border-radius: 5px;
+}
+.table{
+	text-align: left;
+	margin:10px 5%;
+	}
+input[type="text"]{
+	border-radius:1px;
+	/*color: gray;*/
+	background-color:white;
+	width:280px;
+}
+input[type="email"]{
+	border-radius: 1px;
+	background-color: white;
+	width: 280px;
+}
+input[type="password"]{
+	border-radius:1px;
+	background-color: white;
+	width: 280px;
+}
+input[type="confirmpassword"]{
+	border-radius: 1px;
+	background-color: white;
+	width: 280px;
+}
+input[type="dob"]{
+	border-radius: 1px;
+	background-color: white;
+	width: 280px;
+}
+button[type="submit"]{
+	text-align: center;
+	color: white;
+	width: 280px;
+	height:30px;
+
+	border-radius: 5px;
+	border-color: #108FC6;
+	background-color: #108FC6;
+	
+}
+.signin{
+	color: #0784E3;
+}
+p{
+	text-align:center;
+	margin:auto;
+}
