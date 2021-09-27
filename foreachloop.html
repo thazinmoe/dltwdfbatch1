@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Foreach Loop</title>
+	</head>
+	<body>
+		
+	</body>
+	<script type="text/javascript">
+		let people = ["aung aung","maung maung","kyaw kyaw","zaw zaw","mya mya"];//manual array
+
+		// people.forEach(function(person){
+		// 	// document.write("Hello ");
+
+		// 	document.write(person + "<br/>");
+		// });
+
+		// people.forEach(function(person,index){
+		// 	// document.write("Hello ");
+
+		// 	document.write("index is = "+ index +" name is = "+person + "<br/>");
+		// });
+
+		//Arrow Function( callback -> foreach )
+		
+		let getpeoples = (person,index) => {
+			document.write(`${index} - ${person}`+ "<br/>");
+		}
+
+		people.forEach(getpeoples);
+
+	</script>
+</html>

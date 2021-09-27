@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Array Js</title>
+	</head>
+	<body>
+		<p>Hello</p>
+	</body>
+	<script type="text/javascript">
+
+		//Manual array
+		let j= new Array("aung aung","maung maung","kyaw kyaw");
+		console.log(j);
+
+		let k=Array("su su","nu nu","mya mya");
+		console.log(k);
+
+		let l=[1200,1300,1500,1700];
+		console.log(l);
+		console.log(l[3]);
+
+		
+		//Outside array
+		// let m = new Array();
+		let m= [];
+		m[0] = "red";
+		m[1] = "green";
+		m[2] = "black";
+		m[3] = "orange";
+		m[4] = "blue";
+		console.log(m);
+		// console.log(m[2]);
+
+		//String is Character Array in JS
+		let aung= "aung ko ko";
+		console.log(aung[5]);//count the array index number and display the character
+
+
+		//Default Function for array
+		// console.log("array to string = "+ m.toString());
+		// console.log("array to string by special char = " + m.join("*"));
+		// console.log("array value count = "+ m.length);
+
+		//Adding array data by behind
+		// m.push("gold");
+		// m.push("gray");
+		// console.log(m);
+
+		//Delete array by behind
+		// m.pop();
+		// console.log(m);
+		// m.pop();
+		// console.log(m);
+
+		//remove from start,beware index number
+		// m.shift();
+		// console.log(m);
+		
+		// add data at front
+		// m.unshift("yellow");
+		// console.log(m);
+
+		//delete is not remote index number
+		// delete m[2];
+		// console.log(m);
+
+		// Replace data
+		// m[2]= "pink";
+		// console.log(m);
+
+		//Add data,by start from index number and which index want to delete
+		// m.splice(2,0,"orange","apple","mango");
+		// console.log(m);
+
+		//Remove data where to how many 
+		// m.splice(1,3);
+		// console.log(m);
+
+		//Array Combine
+		let arr1 = ["aung aung","maung maung","zaw zaw","ko ko","kyaw kyaw","kaung kaung"];
+		let arr2 = ["nu nu","mya mya","su su","hla hla"];
+		let arr3 = [1500,528];
+		let cbm = arr1.concat(arr2);
+		// console.log(cbm);
+		// console.log(cbm.length);
+
+		//get number from exists array
+		// let arr4 = arr1.slice(3);
+		// console.log(arr4);
+
+		//get data from exist array by where to how many
+		// let arr5 = arr1.slice(2,6);
+		// console.log(arr5);
+
+		//Sort A->Z
+		console.log(arr1);
+		console.log(arr1.sort());
+		console.log(arr1.reverse());
+
+		let arr4=[10,23,14,200,11,50,8,100,40,6,31,25,300];
+		console.log(arr4);
+		// console.log(arr4.sort());
+		// console.log(arr4.reverse());
+		console.log(arr4.sort(function(a,z){
+			return a-z;
+		}));
+		console.log(arr4.sort(function(a,z){
+			return z-a;
+		}));
+		//Array as Object
+
+		//Manual Array(index+value)
+		//Associate Array(index+Key+Value)
+		let arr5 = [];
+		arr5["firstname"]="Ko";
+		arr5["lastname"]="Aung";
+		arr5["age"]=26;
+		arr5["address"]="Mandalay";
+		console.log(arr5);
+		console.log(arr5["address"]);
+
+		//Array as Object (API)
+		let arr6 = {
+			firstname : "Tin",
+			middlename : "Htut",
+			lastname : "Aung",
+			age : 27,
+		}
+		console.log(arr6);
+
+		let arr7 = {
+			firstname : "Tin",
+			middlename : "Htut",
+			lastname : "Aung",
+			age : 27,
+		}
+		console.log(arr7);
+
+		//Comparison Operator 9
+		//==equal to
+		//===equal value and equal type
+		//!=not equal
+		//!==not equal value and not equal type
+		//> greater than
+		//< less than
+		//>= greater than or equal to
+		//<= less than or equal to
+		//? tinary operator
+
+		let num1 = 2;
+		let num2 = 4;
+
+		document.write("equal to result = "+ (num1==num2)+"<br/>");
+		document .write("equal value and equal type to result = "+(num1===num2)+"<br/>");
+		document .write("not equal result = "+(num1!=num2)+"<br/>");
+		document.write("not equal value and not equal type = "+(num1!==num2)+"<br/>");
+		document.write("greater than result = "+(num1>num2)+"<br/>");
+		document.write("less than result = "+(num1<num2)+"<br/>");
+		document.write("greater than or equal to = "+(num1>=num2)+"<br/>");
+		document.write("less than or equal to = "+(num1<=num2)+"<br/>");
+		document.write("tinary result = "+(num1>num2 ? "Yes,num1 is greater than num2" : "No,num1 is not greater than num2")+"<br/>");
+		//Logical Operator 3
+		//&& and
+		//|| or
+		//! not
+
+	</script>
+</html>

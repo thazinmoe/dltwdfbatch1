@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Greeting JS</title>
+</head>
+<body>
+	<h1>Welcome to Javascript</h1>
+	<h3 id="greeting">Hello Myanmar</h3>
+	<div>
+		<img src="img/emoji.jpg" id="funny">
+		<button onclick = "document.getElementById('funny').src = 'img/emoji.jpg';">Shame</button>
+		<button onclick = "document.getElementById('funny').src = 'img/emoji1.jpg';">Amazing</button>
+		<button onclick = "document.getElementById('funny').src = 'img/emoji3.jpg';">Cry</button>
+		<button onclick = "document.getElementById('funny').src = 'img/emoji2.jpg';">Bleh</button>
+	</div>
+	<p id="poem"></p>
+		
+</body>
+<script type="text/javascript">
+	console.log("Hello Mandalay");//defaultfunction
+	console.log(528);
+	console.log("1500");
+	// window.alert("Hello Myanmar");
+	//Variable
+	var sayar = "Tin Htut Aung";
+	let koko = "Kyaw Zayar Ko";
+	let num1 = 1500;
+	let num2 = 528;
+
+	console.log(sayar);
+	console.log("sayar");
+	console.log('sayar');
+	console.log(koko);
+	console.log(num1 + num2);
+
+	// window.alert(koko);
+
+	let greeting = "Hello";
+	let city1 = "Mandalay";
+	let city2 = "Yangon";
+
+	document.getElementById("greeting").innerHTML = greeting +" " + city1 + " " + "I love Myanmar";
+	document.write("I love Mandalay");
+
+	//Special Escape character
+	let x="It is U Ba\'s";
+	let y="poem";
+	let z="He\'s my \"Uncle\"";
+	document.getElementById("poem").innerHTML=x+" "+y+" "+z;
+</script>
+</html>

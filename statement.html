@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Statements</title>
+	</head>
+	<body>
+		<p id= "message"></p>
+		copyright @ <p id= "getyear"></p>
+		
+	</body>
+	<script type="text/javascript">
+		//input
+		// let input = prompt("Say Something");
+		// window.alert(input);
+		// let x = Number(prompt("Enter First Number"));
+		// let y = Number(prompt("Enter second Number"));
+		// let result = (x+y);
+		// // document.write(result);
+		// console.log(x > y ? "True" : "False");
+
+		//Date Time
+		// let date = new Date();
+		// document.write("this is date = " + date+"<br/>");
+		// //1 Jan 1970 > upnow minli seconds
+		// let time = new Date().getTime();
+		// document.write("this is time = "+time+ "<br/>");
+		// let hour = new Date().getHours();
+		// document.write("this is hours = "+hour+"<br/>");
+		// //Sun 0 Mon 1 Sat 6
+		// let day = date.getDay();
+		// document.write("this is day = "+day+"<br/>");
+		// //January is 0 December is 11
+		// let month = date.getMonth();
+		// document.write("this is month = "+month+"<br/>");
+		// let year = date.getFullYear();
+		// document.write("this is year = "+year+"<br/>");
+
+		//Assignment operators
+		// =Assign
+		// +=Add/Assign
+		// -=Subtract/Assign
+		// *=Multiply/Assign
+		// /=Divide/Assign
+		// %=Modulus/Assign
+
+		// let x = 10;
+		// let y = 50;
+		// console.log(y);
+		//y = 60;
+		//y = x+y;
+		// y += x;
+		// console.log("Assignment Operator += " + y);
+		//y = y-x;
+		// y -= x;
+		// console.log("Assignment Operator -= " + y);
+		// y *= x;
+		// console.log("Assignment Operator *= " + y);
+		// y /= x;
+		// console.log("Assignment Operator /= " + y);
+		// y %= x;
+		// console.log("Assignment Operator %= " + y);
+		//if Statement
+		//if(){
+			//code to be excuted;
+		//}
+
+		// let x = Number(prompt("Enter X number "));
+		// let y = Number(prompt("Enter Y number "));
+
+		// if(x < y){
+		// 	document.getElementById("message").innerHTML="Yeah! x lessthan y ";
+
+		// }
+		// if(x > y){
+		// 	document.getElementById("message").innerHTML="x greater than y ";
+		// }else if(x == y){
+		// 	document.getElementById("message").innerHTML="x value and y value are equal ";
+
+		// }else{
+		// 	document.getElementById("message").innerHTML="x less than y ";
+
+		// }
+
+		//Switch Statement
+		 // switch(condition){
+		 // 	case 1:
+		 // 	//code to excuted;
+		 // 	break;
+		 // 	case 2:
+		 // 	//code
+		 // 	break;
+		 // 	case 3:
+		 // 	//code
+		 // 	break;
+		 // 	default :
+		 // }
+
+		 let daycount = new Date().getDay();
+		 let today;
+		 //console.log(daycount);
+		 switch(daycount){
+		 case 0:
+		 	today = "Sunday";
+		 	break;
+		 case 1:
+		 	today = "Monday";
+		 	break;
+		 case 2:
+		 	today = "Tuesday";
+		 	break;
+		 case 3:
+		 	today = "Wednesday";
+		 	break;
+		 case 4:
+		 	today = "Thursday";
+		 	break;
+		 case 5:
+		 	today = "Friday";
+		 	break;
+		 default :
+		 	today = "Saturday";
+		 
+		 }
+		 document.write("today is = "+ today);
+
+
+
+
+	</script>
+</html>

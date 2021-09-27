@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Set Attribute</title>
+</head>
+<body>
+	<div>
+		<h1>My Bio</h1>
+		<p id="p1" style="background-color: yellow;">I am maung maung .i'm27 years old and i live in mandalay.i have two elder brothers</p>
+		<p class ="p2">I am su su. i'm 30 years old and i live in yangon. i have two elder brothers</p>
+	</div>
+</body>
+<script type="text/javascript">
+	console.log(document.getElementById("p1"));
+	console.log(document.getElementsByTagName("h1"));
+
+	let geth1tag = document.getElementsByTagName("h1");
+	let getptag = document.getElementsByTagName("p");
+
+	//geth1tag[0].innerHTML = "My Story";
+	// getptag[1].innerHTML = "Hay";
+
+	geth1tag[0].setAttribute("style","text-align:center");
+	getptag[1].setAttribute("style","background-color:gray; color:white;border:2px solid red;")
+
+	// Get Attribute
+	console.log(getptag[1].getAttribute("class"));
+
+	//Remove Attribute
+	getptag[0].removeAttribute("style");
+
+</script>
+</html>
